@@ -1,0 +1,21 @@
+<h1> Here are all my bedroom products:</h1>	
+
+<% @products.each do |product| %>
+  <ul>
+    <li><%= product.name %></li>
+    <li>$<%= product.price %></li>
+    <li><%= product.category %></li>
+  </ul>
+ <% end %>
+
+
+<h1> Here are all my products sorted by category:</h1>
+
+
+<% @all_products.each do |all| %>
+  <ul>
+    <li><%= all.name %></li>
+    <li>$<%= all.price %></li>
+    <li><%= all.category %></li>
+  </ul>
+ <% end %>
